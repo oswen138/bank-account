@@ -23,8 +23,9 @@
             </div>
             <div class="form-group">
               <label for="initial-deposit">Initial Deposit:</label>
-              <input type="number" id="initial-deposit">
+              <input type="number" step="0.01" id="initial-deposit">
             </div>
+            <button type="submit" class="btn btn-success">Register</button>
           </form>
         </div>
       </div>
@@ -34,18 +35,19 @@
             <h3>Deposit or Withdraw Funds:</h3>
             <div class="form-group">
               <label for="deposit">Deposit Amount:</label>
-              <input type="number" id="deposit">
+              <input type="number" step="0.01" id="deposit" value="0">
             </div>
             <div class="form-group">
               <label for="withdraw">Withdraw Amount:</label>
-              <input type="number" id="withdraw">
+              <input type="number" step="0.01" id="withdraw" value="0">
             </div>
+            <button type="submit" class="btn btn-success">Submit</button>
           </form>
         </div>
     </div>
     <div class="card">
       <h3>Current Balance:</h3>
-      <p>$ <span class="balance"></span></p>
+      <p>$ <span id="balance"></span></p>
     </div>
   </div>
 </body>
